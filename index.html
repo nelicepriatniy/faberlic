@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="mob header-zag"></div>
+            <div class="header-r">
+                <img src="./media/icons/logo.svg" alt="syte logo" class="header-logo">
+                <p class="header-r-text"> Сайт независимого партнера</p>
+            </div>
+            <svg class="header-burger table mob"  viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32.6" height="5.2" fill="#263238" />
+                <rect y="10.4" width="32.6" height="5.2" fill="#263238" />
+                <rect y="20.8" width="32.6" height="5.2" fill="#263238" />
+            </svg>
+            <nav class="header-l desk">
+                <a href="" class="header-nav-item">о компании</a>
+                <a href="" class="header-nav-item">оформить дисконт</a>
+                <a href="" class="header-nav-item">каталог</a>
+                <a href="" class="header-nav-item">выгоды и преимущества</a>
+                <a href="" class="header-nav-item">контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="burger-menu table mob">
+        <nav class="burger-menu-list">
+            <a href="" class="burger-menu-item">о компании</a>
+            <a href="" class="burger-menu-item">оформить дисконт</a>
+            <a href="" class="burger-menu-item">каталог</a>
+            <a href="" class="burger-menu-item">выгоды и преимущества</a>
+            <a href="" class="burger-menu-item">контакты</a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="front-section">
+            <div class="container">
+                <div class="swiper front-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./media/img/01slider/1.png" alt="" class="front-slide-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./media/img/01slider/1.png" alt="" class="front-slide-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./media/img/01slider/1.png" alt="" class="front-slide-img">
+                        </div>
+                    </div>
+                    <div class="front-slider-buttons desk table">
+                        <div class="front-slider-button front-slider-prev">
+                            <svg class="front-slider-arr-svg" viewBox="0 0 30 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28 54L3 28.6555L15.5 15.3277L28 2" stroke="#FAFAFA" stroke-width="4"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="front-slider-button front-slider-next">
+                            <svg class="front-slider-arr-svg" viewBox="0 0 30 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28 54L3 28.6555L15.5 15.3277L28 2" stroke="#FAFAFA" stroke-width="4"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video-blcok">
+            <div class="section-heading">
+                <h2 class="section-heading-text">НАША ПРОДУКЦИЯ В ВИДЕО</h2>
+            </div>
+            <div class="container">
+                <video src="./media/video.mp4" class="video-block-video" muted>
+                </video>
+                <svg class="video-start" viewBox="0 0 126 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="63" cy="63" r="61.5" stroke="white" stroke-width="3" />
+                    <path d="M88 63.5L51.25 84.7176L51.25 42.2824L88 63.5Z" fill="white" />
+                </svg>
+            </div>
+        </section>
+        <section class="form-block">
+            <div class="container">
+                <img src="./media/img/03form/bg.png" alt="" class="form-block-bg">
+                <div class="form-block-l">
+                    <h3 class="form-heaidng">ОФОРМИТЬ ДИСКОНТ</h3>
+                    <div class="form-block-form">
+                        <div class="form-inputs">
+                            <input type="text" class="form-input" placeholder="Ф.И.О*">
+                            <input type="text" class="form-input" placeholder="Дата рождения*">
+                            <input type="text" class="form-input" placeholder="Телефон*">
+                            <input type="text" class="form-input" placeholder="Email">
+                            <input type="text" class="form-input" placeholder="Адрес*">
+                        </div>
+                        <label class="form-policy">
+                            <input type="checkbox" class="form-policy-checkbox">
+                            <div class="form-policy-visual">
+                                <svg class="form-checkbox-svg" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.25" y="0.25" width="24.5" height="24.5" rx="5.75" fill="#474747" stroke="#6C6C6C" stroke-width="0.5" />
+                                    <path d="M19.5 7L11 17L6 12" stroke="white" stroke-width="3" />
+                                  </svg>
+                            </div>
+                            <p class="form-checkbox-text">
+                                я даю согласие на обработку моих персональных данных
+
+                            </p>
+                        </label>
+                        <button class="form-send">Отправить</button>
+                        <p class="form-sub-test">Согласен(на) на обработку указанных персональных данных в целях
+                            реализации заказов через Интернет-магазин FABERLIC <a class="form-polityc-link"
+                                href=""> «Политика АО Фаберлик в отношении обработки персональных данных»</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="section-heading">
+                <h2 class="section-heading-text">О КОМПАНИИ Faberlic</h2>
+            </div>
+            <div class="container">
+                <div class="about-item">
+                    <img src="./media/img/04about/1.png" alt="" class="about-img">
+                    <h3 class="about-heading">
+                        Faberlic – крупнейшая Компания прямых продаж
+                    </h3>
+                    <p class="about-text">
+                        Производитель уникальной запатентованной кислородной косметики, которая доставляет кислород в
+                        глубокие слои кожи. Также в ассортименте Faberlic – вся гамма средств для ухода за кожей и
+                        волосами, эксклюзивная французская парфюмерия, декоративная косметика, продукты для дома и
+                        здоровья, белье и колготки, модная одежда.
+                    </p>
+                </div>
+                <div class="about-item">
+                    <img src="./media/img/04about/2.png" alt="" class="about-img">
+                    <h3 class="about-heading">
+                        Компания имеет 30 патентов и входит в рейтинг «Топ-100 крупнейших косметических компаний мира»
+                    </h3>
+                    <p class="about-text">
+                        Faberlic является спонсором экологической организации «ЭКА», которая реализует программы
+                        «Зеленые города» и «Больше кислорода!». По данным программам на территории России посажено более
+                        10 млн деревьев.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="text-block">
+            <div class="container">
+                <p class="text-block-heading">
+                    Хотите заказать продукцию компании Faberlic напрямую
+                    у производителя с 20% скидкой? Заполните <span>форму</span> выше и получите доступ в личный кабинет
+                    интернет-магазина на свою персональную страничку с онлайн-каталогом.
+                </p>
+                <a class="text-block-button">интерактивный каталог</a>
+            </div>
+        </section>
+        <section class="advantage">
+            <div class="section-heading">
+                <h2 class="section-heading-text">ВЫГОДЫ И ПРЕИМУЩЕСТВА</h2>
+            </div>
+            <div class="container">
+                <div class="advantages-item">
+                    <img src="./media/img/05advantages/1.svg" alt="" class="advantages-item-img">
+                    <p class="advantages-item-heaing">шаг 1</p>
+                    <p class="advantages-item-text">
+                        Заполните форму регистрации
+                        на сайте.
+                    </p>
+                </div>
+                <div class="advantages-item">
+                    <img src="./media/img/05advantages/2.svg" alt="" class="advantages-item-img">
+                    <p class="advantages-item-heaing">шаг 2</p>
+                    <p class="advantages-item-text">
+                        Подтвердите номер телефона. Получите логин,
+                        и ключ (пароль) для входа
+                        в личный кабинет по смс.
+                    </p>
+                </div>
+                <div class="advantages-item">
+                    <img src="./media/img/05advantages/3.svg" alt="" class="advantages-item-img">
+                    <p class="advantages-item-heaing">шаг 3</p>
+                    <p class="advantages-item-text">
+                        Полистайте каталог, выберите нужную продукцию онлайн.
+                    </p>
+                </div>
+                <div class="advantages-item">
+                    <img src="./media/img/05advantages/4.svg" alt="" class="advantages-item-img">
+                    <p class="advantages-item-heaing">шаг 4</p>
+                    <p class="advantages-item-text">
+                        Оформите заказ, выбрав ближайшей удобный пункт выдачи заказа
+                    </p>
+                </div>
+                <div class="advantages-item">
+                    <img src="./media/img/05advantages/5.svg" alt="" class="advantages-item-img">
+                    <p class="advantages-item-heaing">шаг 5</p>
+                    <p class="advantages-item-text">
+                        Оформите заказ, выбрав ближайшей удобный пункт выдачи заказа
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="fooer-l">
+                <img src="./media/icons/logo.svg" alt="" class="footer-logo">
+                <p class="footer-l-text">
+                    Сайт независимого партнера
+                </p>
+            </div>
+            <div class="footer-r">
+                <p class="fppter-r-heading">КОНТАКТЫ</p>
+                <a href="" class="footer-r-link">+79114037180</a>
+                <a href="" class="footer-r-link">anson73-v@ya.ru</a>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/app.js"></script>
+</body>
+
+</html>
