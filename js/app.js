@@ -28,8 +28,9 @@ if(videoBlock) {
 
 if(window.innerWidth < 1200) {
   const headerBurger = document.querySelector('.header-burger');
+  const closeHeaderBtns = document.querySelectorAll('.close-header-btn')
+  const headerMenu = document.querySelector('.burger-menu')
   if(headerBurger) {
-    const headerMenu = document.querySelector('.burger-menu')
     headerBurger.onclick = ()=>{
       if(headerMenu.classList.contains('active')) {
         headerBurger.classList.remove('active')
@@ -40,6 +41,17 @@ if(window.innerWidth < 1200) {
         
       }
       headerMenu.classList.toggle('active');
+    }
+  }
+  if(closeHeaderBtns.length > 0) {
+    for(let i = 0; closeHeaderBtns.length > i; i++) {
+      closeHeaderBtns[i].onclick = ()=>{
+        headerBurger.classList.remove('active')
+        headerMenu.classList.remove('active')
+        console.log(123);
+        
+
+      }
     }
   }
 }

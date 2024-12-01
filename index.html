@@ -15,32 +15,32 @@
     <header class="header">
         <div class="container">
             <div class="mob header-zag"></div>
-            <div class="header-r">
+            <a class="header-r" href="./index.html">
                 <img src="./media/icons/logo.svg" alt="syte logo" class="header-logo">
                 <p class="header-r-text"> Сайт независимого партнера</p>
-            </div>
+            </a>
             <svg class="header-burger table mob"  viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="32.6" height="5.2" fill="#263238" />
                 <rect y="10.4" width="32.6" height="5.2" fill="#263238" />
                 <rect y="20.8" width="32.6" height="5.2" fill="#263238" />
             </svg>
             <nav class="header-l desk">
-                <a href="" class="header-nav-item">о компании</a>
-                <a href="" class="header-nav-item">оформить дисконт</a>
-                <a href="" class="header-nav-item">каталог</a>
-                <a href="" class="header-nav-item">выгоды и преимущества</a>
-                <a href="" class="header-nav-item">контакты</a>
+                <a href="./index.html#about" class="header-nav-item">о компании</a>
+                <a href="./formPage.html" class="header-nav-item">оформить дисконт</a>
+                <a href="./index.html#catalog" class="header-nav-item">каталог</a>
+                <a href="./index.html#adventage" class="header-nav-item">выгоды и преимущества</a>
+                <a href="./index.html#contacts" class="header-nav-item">контакты</a>
             </nav>
         </div>
     </header>
 
     <div class="burger-menu table mob">
         <nav class="burger-menu-list">
-            <a href="" class="burger-menu-item">о компании</a>
-            <a href="" class="burger-menu-item">оформить дисконт</a>
-            <a href="" class="burger-menu-item">каталог</a>
-            <a href="" class="burger-menu-item">выгоды и преимущества</a>
-            <a href="" class="burger-menu-item">контакты</a>
+            <a href="./index.html#about" class="burger-menu-item close-header-btn">о компании</a>
+            <a href="./formPage.html" class="burger-menu-item close-header-btn">оформить дисконт</a>
+            <a href="./index.html#catalog" class="burger-menu-item close-header-btn">каталог</a>
+            <a href="./index.html#adventage" class="burger-menu-item close-header-btn">выгоды и преимущества</a>
+            <a href="./index.html#contacts" class="burger-menu-item close-header-btn">контакты</a>
         </nav>
     </div>
 
@@ -82,7 +82,7 @@
             <div class="section-heading">
                 <h2 class="section-heading-text">НАША ПРОДУКЦИЯ В ВИДЕО</h2>
             </div>
-            <div class="container">
+            <div class="container video-container">
                 <video src="./media/video.mp4" class="video-block-video" muted>
                 </video>
                 <svg class="video-start" viewBox="0 0 126 126" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -96,16 +96,16 @@
                 <img src="./media/img/03form/bg.png" alt="" class="form-block-bg">
                 <div class="form-block-l">
                     <h3 class="form-heaidng">ОФОРМИТЬ ДИСКОНТ</h3>
-                    <div class="form-block-form">
+                    <form action="./thanks.html"  class="form-block-form">
                         <div class="form-inputs">
-                            <input type="text" class="form-input" placeholder="Ф.И.О*">
-                            <input type="text" class="form-input" placeholder="Дата рождения*">
-                            <input type="text" class="form-input" placeholder="Телефон*">
+                            <input type="text" class="form-input" placeholder="Ф.И.О*" required>
+                            <input type="text" class="form-input" placeholder="Дата рождения*" required>
+                            <input type="text" class="form-input" placeholder="Телефон*" required>
                             <input type="text" class="form-input" placeholder="Email">
-                            <input type="text" class="form-input" placeholder="Адрес*">
+                            <input type="text" class="form-input" placeholder="Адрес*" required>
                         </div>
                         <label class="form-policy">
-                            <input type="checkbox" class="form-policy-checkbox">
+                            <input type="checkbox" class="form-policy-checkbox" required>
                             <div class="form-policy-visual">
                                 <svg class="form-checkbox-svg" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.25" y="0.25" width="24.5" height="24.5" rx="5.75" fill="#474747" stroke="#6C6C6C" stroke-width="0.5" />
@@ -117,15 +117,15 @@
 
                             </p>
                         </label>
-                        <button class="form-send">Отправить</button>
+                        <button type="submit" class="form-send">Отправить</button>
                         <p class="form-sub-test">Согласен(на) на обработку указанных персональных данных в целях
                             реализации заказов через Интернет-магазин FABERLIC <a class="form-polityc-link"
                                 href=""> «Политика АО Фаберлик в отношении обработки персональных данных»</a></p>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="section-heading">
                 <h2 class="section-heading-text">О КОМПАНИИ Faberlic</h2>
             </div>
@@ -155,17 +155,17 @@
                 </div>
             </div>
         </section>
-        <section class="text-block">
+        <section class="text-block" id="catalog">
             <div class="container">
                 <p class="text-block-heading">
                     Хотите заказать продукцию компании Faberlic напрямую
                     у производителя с 20% скидкой? Заполните <span>форму</span> выше и получите доступ в личный кабинет
                     интернет-магазина на свою персональную страничку с онлайн-каталогом.
                 </p>
-                <a class="text-block-button">интерактивный каталог</a>
+                <a href="https://faberlic.com/index.php?option=com_flippingbook&view=catalog&Itemid=2071&lang=ru&sponsornumber=755612" class="text-block-button">интерактивный каталог</a>
             </div>
         </section>
-        <section class="advantage">
+        <section class="advantage" id="adventage">
             <div class="section-heading">
                 <h2 class="section-heading-text">ВЫГОДЫ И ПРЕИМУЩЕСТВА</h2>
             </div>
@@ -293,7 +293,7 @@
             </div>
             <img src="./media/img/07contacts/bg.png" alt="" class="contacts-bg">
         </section>
-        <section class="logo-form">
+        <section class="logo-form" id="contacts">
             <div class="container">
                 <img src="./media/icons/logo.svg" alt="" class="logo-form-img">
                 <p class="logo-form-text">
@@ -301,13 +301,13 @@
                 </p>
                 <div class="form-block-l">
                     <h3 class="form-heaidng">ОФОРМИТЬ ДИСКОНТ</h3>
-                    <div class="form-block-form">
+                    <form action="./thanks.html" class="form-block-form">
                         <div class="form-inputs">
-                            <input type="text" class="form-input" placeholder="Ф.И.О*">
-                            <input type="text" class="form-input" placeholder="Дата рождения*">
-                            <input type="text" class="form-input" placeholder="Телефон*">
+                            <input type="text" class="form-input" placeholder="Ф.И.О*" required>
+                            <input type="date" class="form-input" placeholder="Дата рождения*" required>
+                            <input type="text" class="form-input" placeholder="Телефон*" required>
                             <input type="text" class="form-input" placeholder="Email">
-                            <input type="text" class="form-input" placeholder="Адрес*">
+                            <input type="text" class="form-input" placeholder="Адрес*" required>
                         </div>
                         <label class="form-policy">
                             <input type="checkbox" class="form-policy-checkbox">
@@ -322,11 +322,11 @@
 
                             </p>
                         </label>
-                        <button class="form-send">Отправить</button>
+                        <button class="form-send" type="submit">Отправить</button>
                         <p class="form-sub-test">Согласен(на) на обработку указанных персональных данных в целях
                             реализации заказов через Интернет-магазин FABERLIC <a class="form-polityc-link"
                                 href=""> «Политика АО Фаберлик в отношении обработки персональных данных»</a></p>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
