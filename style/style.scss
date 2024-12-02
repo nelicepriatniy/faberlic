@@ -165,8 +165,7 @@ html {
 }
 
 .front-slider-prev {
-    left: -50rem;
-    transform: translate(-100%, -50%);
+    left: 20rem;
 }
 
 .front-slider-arr-svg {
@@ -175,8 +174,7 @@ html {
 }
 
 .front-slider-next {
-    right: -50rem;
-    transform: translate(100%, -50%);
+    right: 20rem;
 
     .front-slider-arr-svg {
         transform: rotate(180deg);
@@ -1091,6 +1089,10 @@ html {
     }
     .form-l-text {
         font-size: 22rem;
+    }
+    .front-slider-button {
+        width: 70rem;
+        height: 70rem;
     }
 }
 

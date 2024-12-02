@@ -2,11 +2,24 @@
 
 const swiper = new Swiper('.swiper', {
   speed: 400,
-  slidesPerView: 1,
-  initialSlide: 1,
+  slidesPerView: 1.2,
+  // initialSlide: 1,
+  centeredSlides: true,
+  loop: true,
   navigation: {
     nextEl: '.front-slider-next',
     prevEl: '.front-slider-prev'
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 1.2,
+    },
+    742: {
+      slidesPerView: 1.1,
+    },
+    320: {
+      slidesPerView: 1,
+    }
   }
 });
 
