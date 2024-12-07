@@ -68,3 +68,5 @@ if(window.innerWidth < 1200) {
     }
   }
 }
+
+new WOW().init();
